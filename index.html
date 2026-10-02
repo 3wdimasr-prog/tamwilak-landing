@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#071a2f" />
+  <meta name="description" content="تمويلك — حلول تمويل وسداد مديونية وتمويل إضافي وتمويل سيارات حسب الأهلية وسياسة الجهة التمويلية." />
+  <title>تمويلك | تمويلك أسهل.. وخياراتك أكثر.</title>
+  <style>
+    :root{
+      --navy:#071a2f; --navy2:#0b2949; --green:#0da66b; --green2:#19c985;
+      --ink:#112033; --muted:#64748b; --bg:#f5f8fb; --line:#e3e9ef; --white:#fff;
+      --shadow:0 20px 55px rgba(4,22,40,.13); --r:24px;
+    }
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.7}
+    img{max-width:100%;display:block}a{text-decoration:none;color:inherit}button,input,select{font:inherit}
+    .wrap{width:min(1160px,92%);margin:auto}.topbar{background:#041321;color:#d9e5ef;font-size:13px;text-align:center;padding:8px 12px}
+    header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(227,233,239,.9)}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px}.brand img{height:58px;width:auto}
+    .links{display:flex;gap:24px;font-size:14px;font-weight:700;color:#26384d}.navcta,.btn{border:0;cursor:pointer;border-radius:14px;font-weight:800;transition:.2s ease}
+    .navcta{background:var(--navy);color:#fff;padding:12px 18px}.navcta:hover,.btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 25px rgba(7,26,47,.2)}
+    .hero{background:linear-gradient(120deg,#06172a 0%,#0b2c4d 58%,#0d513d 100%);color:#fff;position:relative;overflow:hidden}
+    .hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 15% 10%,rgba(25,201,133,.28),transparent 33%),radial-gradient(circle at 90% 30%,rgba(255,255,255,.08),transparent 25%)}
+    .hero-inner{position:relative;display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:44px;padding:74px 0 64px}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);padding:7px 12px;border-radius:999px;font-size:13px;margin-bottom:18px}
+    .dot{width:8px;height:8px;background:var(--green2);border-radius:50%;box-shadow:0 0 0 5px rgba(25,201,133,.13)}
+    h1{font-size:clamp(36px,5vw,64px);line-height:1.14;margin:0 0 18px;letter-spacing:-1.8px}.hero p{font-size:18px;color:#dce7f0;margin:0 0 26px;max-width:620px}
+    .checks{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 28px}.chip{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.14);padding:8px 11px;border-radius:12px;font-size:13px}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px}.btn{padding:14px 22px}.btn-primary{background:linear-gradient(135deg,var(--green2),var(--green));color:#042417}.btn-secondary{background:#fff;color:var(--navy)}
+    .hero-card{position:relative}.hero-card img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:28px;box-shadow:0 30px 80px rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.14)}
+    .float-card{position:absolute;bottom:-18px;right:-18px;background:#fff;color:var(--ink);padding:15px 18px;border-radius:18px;box-shadow:var(--shadow);min-width:210px}.float-card b{display:block;color:var(--navy);font-size:20px}.float-card span{font-size:12px;color:var(--muted)}
+    .trust{background:#fff;border-bottom:1px solid var(--line)}.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}.trust-item{padding:22px;text-align:center;border-left:1px solid var(--line)}.trust-item:last-child{border-left:0}.trust-item b{display:block;font-size:16px;color:var(--navy)}.trust-item span{font-size:12px;color:var(--muted)}
+    section{padding:82px 0}.section-head{text-align:center;max-width:760px;margin:0 auto 38px}.kicker{color:var(--green);font-weight:900;font-size:14px}.section-head h2{font-size:clamp(29px,4vw,44px);line-height:1.25;margin:8px 0 12px;color:var(--navy)}.section-head p{color:var(--muted);margin:0}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{background:#fff;border:1px solid var(--line);border-radius:22px;padding:25px;transition:.2s;box-shadow:0 8px 25px rgba(3,24,43,.04)}.service:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+    .icon{width:48px;height:48px;border-radius:15px;background:#e7f8f1;display:grid;place-items:center;color:var(--green);font-size:22px;font-weight:900}.service h3{margin:17px 0 6px;font-size:20px;color:var(--navy)}.service p{margin:0;color:var(--muted);font-size:14px}.tag{display:inline-block;margin-top:12px;font-size:12px;font-weight:800;background:#f0f4f8;color:#34506b;padding:5px 9px;border-radius:999px}
+    .situation{background:#eaf1f6}.situation-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.situation-card{background:#fff;border:1px solid #dae5ee;padding:22px;border-radius:20px;cursor:pointer;transition:.2s}.situation-card:hover{border-color:#8ed7b9;transform:translateY(-3px)}.situation-card h3{font-size:17px;margin:8px 0 5px;color:var(--navy)}.situation-card p{font-size:13px;color:var(--muted);margin:0}.situation-card .num{font-size:12px;font-weight:900;color:var(--green)}
+    .cars-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.car{background:#fff;border-radius:22px;overflow:hidden;border:1px solid var(--line);box-shadow:0 10px 30px rgba(4,22,40,.06)}.car img{width:100%;height:245px;object-fit:cover}.car-body{padding:17px}.car-body b{color:var(--navy);font-size:18px}.car-body span{display:block;color:var(--muted);font-size:12px;margin-top:4px}
+    .notice{margin-top:18px;background:#eef8f3;border:1px solid #c8eadb;border-radius:18px;padding:16px 18px;color:#315f4d;font-size:13px}
+    .flow{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;counter-reset:steps}.step{background:#fff;border:1px solid var(--line);padding:22px;border-radius:20px;position:relative}.step:before{counter-increment:steps;content:counter(steps);width:32px;height:32px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:900}.step h3{margin:15px 0 5px;color:var(--navy);font-size:17px}.step p{margin:0;color:var(--muted);font-size:13px}
+    .lead-sec{background:linear-gradient(135deg,#071a2f,#0a3652)}.lead-box{display:grid;grid-template-columns:.8fr 1.2fr;gap:30px;background:#fff;border-radius:30px;padding:28px;box-shadow:0 24px 70px rgba(0,0,0,.22)}.lead-copy{background:linear-gradient(145deg,#071a2f,#0b4c3b);color:#fff;padding:30px;border-radius:24px}.lead-copy h2{font-size:34px;line-height:1.25;margin:0 0 12px}.lead-copy p{color:#d6e4ec}.lead-copy ul{padding:0;margin:24px 0 0;list-style:none}.lead-copy li{margin:10px 0;font-size:14px}.lead-copy li:before{content:"✓";display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--green2);color:#042417;font-weight:900;margin-left:8px}
+    form{padding:5px}.form-title{font-size:23px;font-weight:900;color:var(--navy);margin:4px 0 4px}.form-sub{font-size:13px;color:var(--muted);margin:0 0 18px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:800;color:#41556b}.field input,.field select{height:49px;border:1px solid #d8e1e9;background:#fff;border-radius:13px;padding:0 13px;outline:none}.field input:focus,.field select:focus{border-color:#61c9a1;box-shadow:0 0 0 4px rgba(13,166,107,.08)}
+    .consent{display:flex;align-items:flex-start;gap:8px;font-size:12px;color:var(--muted);margin:14px 0}.submit{width:100%;background:linear-gradient(135deg,var(--green2),var(--green));color:#043327;border:0;border-radius:14px;padding:14px;font-weight:900;cursor:pointer}.micro{font-size:11px;color:#8291a0;text-align:center;margin-top:10px}.success{display:none;background:#ecf9f3;border:1px solid #bce9d3;color:#25624a;padding:16px;border-radius:14px;margin-top:12px}
+    .faq{max-width:880px;margin:auto}.faq details{background:#fff;border:1px solid var(--line);border-radius:16px;padding:0 18px;margin:10px 0}.faq summary{cursor:pointer;font-weight:900;color:var(--navy);padding:17px 0}.faq details p{color:var(--muted);font-size:14px;margin:0 0 17px}
+    .disclosure{background:#fff4db;border:1px solid #f0d99d;border-radius:20px;padding:20px;margin-top:25px;color:#624d20;font-size:12px}.disclosure strong{color:#3f3215}
+    footer{background:#041321;color:#b9c8d5;padding:35px 0 90px}.foot{display:grid;grid-template-columns:1.3fr 1fr;gap:30px}.foot img{height:62px}.foot p{font-size:12px;max-width:700px}.foot-right{text-align:left;font-size:12px}.foot a{color:#fff}
+    .sticky{display:none;position:fixed;bottom:0;left:0;right:0;z-index:40;padding:10px;background:rgba(255,255,255,.96);border-top:1px solid var(--line);box-shadow:0 -10px 30px rgba(4,22,40,.1)}.sticky button{width:100%;background:var(--green);color:#fff;border:0;border-radius:13px;padding:13px;font-weight:900}
+    .modal{position:fixed;inset:0;background:rgba(2,10,20,.65);display:none;align-items:center;justify-content:center;z-index:70;padding:20px}.modal.show{display:flex}.modal-card{background:#fff;border-radius:22px;padding:28px;width:min(440px,100%);text-align:center}.modal-card h3{margin:8px 0;color:var(--navy)}.modal-card p{color:var(--muted);font-size:14px}.modal-card button{border:0;background:var(--navy);color:#fff;border-radius:12px;padding:11px 18px;font-weight:800;cursor:pointer}
+    @media(max-width:900px){.links{display:none}.hero-inner,.lead-box{grid-template-columns:1fr}.hero-inner{padding:54px 0}.hero-card{order:-1}.float-card{right:12px}.trust-grid{grid-template-columns:1fr 1fr}.services{grid-template-columns:1fr 1fr}.situation-grid,.flow{grid-template-columns:1fr 1fr}.cars-grid{grid-template-columns:1fr 1fr}.foot{grid-template-columns:1fr}.foot-right{text-align:right}.sticky{display:block}}
+    @media(max-width:600px){.brand img{height:46px}.nav{height:64px}.navcta{padding:10px 12px;font-size:12px}h1{font-size:39px}.hero p{font-size:16px}.hero-card img{aspect-ratio:1/1}.trust-grid,.services,.situation-grid,.flow,.cars-grid,.fields{grid-template-columns:1fr}.trust-item{border-left:0;border-bottom:1px solid var(--line)}section{padding:58px 0}.lead-box{padding:15px}.lead-copy{padding:22px}.lead-copy h2{font-size:27px}.car img{height:220px}.float-card{bottom:-12px;min-width:180px;padding:11px 14px}.float-card b{font-size:17px}}
+
+    /* Direct contact CTA — no booking form */
+    .contact-box{display:grid;grid-template-columns:.95fr 1.05fr;gap:26px;background:#fff;border-radius:30px;padding:28px;box-shadow:0 24px 70px rgba(0,0,0,.22)}
+    .contact-copy{background:linear-gradient(145deg,#071a2f,#0b4c3b);color:#fff;padding:32px;border-radius:24px}.contact-copy h2{font-size:35px;line-height:1.25;margin:0 0 12px}.contact-copy p{color:#d6e4ec;margin:0}.contact-copy ul{padding:0;margin:24px 0 0;list-style:none}.contact-copy li{margin:10px 0;font-size:14px}.contact-copy li:before{content:"✓";display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--green2);color:#042417;font-weight:900;margin-left:8px}
+    .contact-panel{display:flex;flex-direction:column;justify-content:center;padding:12px}.contact-panel h3{margin:0 0 6px;font-size:27px;color:var(--navy)}.contact-panel>p{margin:0 0 20px;color:var(--muted);font-size:14px}
+    .contact-actions{display:grid;grid-template-columns:1fr 1fr;gap:14px}.contact-card{min-height:145px;border-radius:20px;padding:22px;display:flex;flex-direction:column;justify-content:space-between;transition:.2s;border:1px solid var(--line)}.contact-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.contact-card.whatsapp{background:linear-gradient(145deg,#eafbf3,#dff7ed);border-color:#bfe8d4}.contact-card.call{background:linear-gradient(145deg,#f3f7fb,#e8f0f7);border-color:#d6e3ee}.contact-card .contact-icon{font-size:28px;line-height:1}.contact-card b{font-size:19px;color:var(--navy)}.contact-card span{font-size:14px;color:#466178;direction:ltr;text-align:right}.contact-note{margin-top:14px;background:#f6f8fb;border:1px solid var(--line);padding:13px 15px;border-radius:14px;font-size:12px;color:var(--muted)}
+    .hero-call{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.38)}
+    .sticky .sticky-actions{display:grid;grid-template-columns:1.15fr .85fr;gap:8px}.sticky a{display:flex;align-items:center;justify-content:center;border-radius:13px;padding:13px 8px;font-weight:900}.sticky .wa{background:var(--green);color:#fff}.sticky .call{background:var(--navy);color:#fff}
+    @media(max-width:900px){.contact-box{grid-template-columns:1fr}}
+    @media(max-width:600px){.contact-box{padding:15px}.contact-copy{padding:22px}.contact-copy h2{font-size:28px}.contact-actions{grid-template-columns:1fr}.contact-card{min-height:115px}}
+
+  </style>
+</head>
+<body>
+  <div class="topbar">حلول تمويلية حسب الأهلية وسياسة الجهة التمويلية — تواصل مباشر عبر واتساب أو الاتصال</div>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="تمويلك"><img src="assets/tamwilak-logo.png" alt="تمويلك TAMWILAK" /></a>
+      <nav class="links"><a href="#services">الخدمات</a><a href="#cars">السيارات</a><a href="#how">كيف نبدأ؟</a><a href="#faq">الأسئلة</a></nav>
+      <a class="navcta" href="https://wa.me/966560598706?text=%D9%87%D9%84%D8%A7%D8%8C%20%D8%AC%D8%A7%D9%8A%20%D9%85%D9%86%20%D9%85%D9%88%D9%82%D8%B9%20%D8%AA%D9%85%D9%88%D9%8A%D9%84%D9%83%20%D9%88%D8%A3%D8%A8%D8%BA%D9%89%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%A7%D9%84%D8%AE%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D9%86%D8%A7%D8%B3%D8%A8%D8%A9%20%D9%84%D8%AD%D8%A7%D9%84%D8%AA%D9%8A." target="_blank" rel="noopener">واتساب الآن</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <div>
+          <div class="eyebrow"><span class="dot"></span> حلول لعملاء البنك الأهلي السعودي وغيرهم — حسب الأهلية</div>
+          <h1>تمويلك أسهل..<br>وخياراتك أكثر.</h1>
+          <p>نساعدك على فهم الخيارات المناسبة لوضعك الحالي: سداد مديونية، تمويل جديد، تمويل إضافي ومرن، إعادة تمويل، وتمويل سيارات.</p>
+          <div class="checks"><span class="chip">سداد مديونية</span><span class="chip">تمويل إضافي</span><span class="chip">إضافي مرن</span><span class="chip">تمويل سيارات</span><span class="chip">دراسة أهلية أولية</span></div>
+          <div class="hero-actions"><a class="btn btn-primary" href="https://wa.me/966560598706?text=%D9%87%D9%84%D8%A7%D8%8C%20%D8%AC%D8%A7%D9%8A%20%D9%85%D9%86%20%D9%85%D9%88%D9%82%D8%B9%20%D8%AA%D9%85%D9%88%D9%8A%D9%84%D9%83%20%D9%88%D8%A3%D8%A8%D8%BA%D9%89%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%A7%D9%84%D8%AE%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D9%86%D8%A7%D8%B3%D8%A8%D8%A9%20%D9%84%D8%AD%D8%A7%D9%84%D8%AA%D9%8A." target="_blank" rel="noopener">تواصل واتساب</a><a class="btn hero-call" href="tel:+966560598706">اتصل الآن</a><button class="btn btn-secondary" data-scroll="#services">شوف الخيارات</button></div>
+        </div>
+        <div class="hero-card">
+          <img src="assets/hero-jetour.webp" alt="سيارات متاحة ضمن خيارات التمويل" />
+          <div class="float-card"><b>عندك التزام حالي؟</b><span>شخصي، سيارة، عقاري أو أكثر من التزام — نبدأ من وضعك الحالي.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="trust"><div class="wrap trust-grid">
+      <div class="trust-item"><b>طلب بسيط</b><span>بيانات أولية فقط</span></div>
+      <div class="trust-item"><b>خيارات متعددة</b><span>حسب وضعك والتزاماتك</span></div>
+      <div class="trust-item"><b>بدون وعود مضللة</b><span>القبول يخضع للأهلية</span></div>
+      <div class="trust-item"><b>خصوصية أوضح</b><span>لا نطلب OTP أو بيانات حساب</span></div>
+    </div></div>
+
+    <section id="services"><div class="wrap">
+      <div class="section-head"><div class="kicker">خدمات تمويلك</div><h2>اختر الهدف.. ونبدأ من حالتك الحالية</h2><p>بدل ما تدخل في تفاصيل كثيرة، اختر احتياجك وسنرتب لك البيانات المطلوبة لدراسة الخيارات المتاحة.</p></div>
+      <div class="services">
+        <article class="service"><div class="icon">↻</div><h3>سداد المديونية</h3><p>دراسة خيارات سداد أو تحويل الالتزامات القائمة وإعادة ترتيبها وفق شروط الجهة التمويلية.</p><span class="tag">قرض شخصي / سيارة / التزامات متعددة</span></article>
+        <article class="service"><div class="icon">＋</div><h3>تمويل جديد</h3><p>دراسة إمكانية الحصول على تمويل شخصي جديد بناءً على الدخل والالتزامات ونسبة الاستقطاع.</p><span class="tag">حسب الأهلية</span></article>
+        <article class="service"><div class="icon">↑</div><h3>تمويل إضافي</h3><p>إذا كان لديك تمويل قائم، نراجع إمكانية التمويل الإضافي وفق المتطلبات والالتزامات الحالية.</p><span class="tag">للحالات المؤهلة</span></article>
+        <article class="service"><div class="icon">≈</div><h3>إضافي مرن</h3><p>خيارات تمويل مرنة تتأثر بمدة الالتزامات الحالية، الدخل، ونسبة عبء الدين.</p><span class="tag">حسب المنتج المتاح</span></article>
+        <article class="service"><div class="icon">⌂</div><h3>عليك تمويل عقاري؟</h3><p>وجود تمويل عقاري لا يعني الرفض تلقائيًا؛ تتم دراسة القدرة التمويلية حسب الحالة والالتزامات.</p><span class="tag">دراسة حالة فردية</span></article>
+        <article class="service"><div class="icon">🚘</div><h3>تمويل سيارات</h3><p>نساعدك في معرفة خيارات تمويل السيارة، وقد تتوفر عروض بدون دفعة أولى لبعض الحالات والعروض المؤهلة.</p><span class="tag">العرض والشروط تطبق</span></article>
+      </div>
+    </div></section>
+
+    <section class="situation"><div class="wrap">
+      <div class="section-head"><div class="kicker">وش وضعك الحالي؟</div><h2>اضغط على الحالة الأقرب لك</h2><p>سننقلك مباشرة إلى النموذج مع اختيار حالتك تلقائيًا.</p></div>
+      <div class="situation-grid">
+        <div class="situation-card" data-situation="قرض شخصي"><span class="num">01</span><h3>عندي قرض شخصي</h3><p>أبغى أعرف خيارات السداد أو التمويل الإضافي.</p></div>
+        <div class="situation-card" data-situation="تمويل سيارة"><span class="num">02</span><h3>عندي تمويل سيارة</h3><p>أبغى أعرف الخيارات المتاحة مع التزام السيارة.</p></div>
+        <div class="situation-card" data-situation="تمويل عقاري"><span class="num">03</span><h3>عندي تمويل عقاري</h3><p>أبغى أعرف قدرتي التمويلية مع العقاري.</p></div>
+        <div class="situation-card" data-situation="لا يوجد"><span class="num">04</span><h3>أبغى سيارة جديدة</h3><p>أبغى أعرف خيارات تمويل السيارة والعروض المؤهلة.</p></div>
+      </div>
+    </div></section>
+
+    <section id="cars"><div class="wrap">
+      <div class="section-head"><div class="kicker">خيارات سيارات</div><h2>سيارات متنوعة حسب المتاح</h2><p>صور حقيقية من المخزون/المعرض. الموديلات والتوفر والأسعار تخضع للتحديث وقت الطلب.</p></div>
+      <div class="cars-grid">
+        <article class="car"><img src="assets/gmc-yukon.webp" alt="GMC Yukon"><div class="car-body"><b>GMC Yukon</b><span>خيار SUV فاخر — التوفر والتمويل حسب الحالة.</span></div></article>
+        <article class="car"><img src="assets/chevrolet-tahoe.webp" alt="Chevrolet Tahoe"><div class="car-body"><b>Chevrolet Tahoe</b><span>خيارات تمويل متعددة حسب العرض المتاح.</span></div></article>
+        <article class="car"><img src="assets/land-cruiser.webp" alt="Toyota Land Cruiser"><div class="car-body"><b>Toyota Land Cruiser</b><span>دراسة التمويل والدفعة حسب الأهلية والعرض.</span></div></article>
+        <article class="car"><img src="assets/jetour-t2.webp" alt="Jetour T2"><div class="car-body"><b>Jetour T2</b><span>سيارة SUV ضمن الخيارات المتاحة وقت الطلب.</span></div></article>
+        <article class="car"><img src="assets/toyota-camry.webp" alt="Toyota Camry"><div class="car-body"><b>Toyota Camry</b><span>تمويل السيارة يخضع للحدود والشروط المعتمدة.</span></div></article>
+        <article class="car"><img src="assets/gmc-front.webp" alt="GMC"><div class="car-body"><b>خيارات أخرى</b><span>اسألنا عن الموديل الذي تبحث عنه وسنراجع المتاح.</span></div></article>
+      </div>
+      <div class="notice"><strong>بخصوص «بدون دفعة أولى»:</strong> قد تتوفر عروض أو حالات مؤهلة بدون دفعة أولى، لكن ذلك ليس ضمانًا عامًا لجميع العملاء أو جميع السيارات. يتم تأكيد العرض بعد دراسة الأهلية وتوفر المنتج.</div>
+    </div></section>
+
+    <section id="how"><div class="wrap">
+      <div class="section-head"><div class="kicker">الخطوات</div><h2>من الاستفسار إلى معرفة خيارك</h2></div>
+      <div class="flow"><article class="step"><h3>اختر خدمتك</h3><p>حدد هل استفسارك عن سداد مديونية، تمويل إضافي أو سيارة.</p></article><article class="step"><h3>واتساب أو اتصال</h3><p>تواصل معنا مباشرة على الرقم الظاهر بالموقع بدون تعبئة نموذج.</p></article><article class="step"><h3>وضح وضعك</h3><p>اذكر نوع الالتزام الحالي والمعلومة التي تحتاجها بشكل مبدئي.</p></article><article class="step"><h3>نعرض لك الخيارات</h3><p>نوضح الخطوة المناسبة والمتطلبات حسب حالتك والمنتج المتاح.</p></article></div>
+    </div></section>
+
+    <section class="lead-sec" id="contact"><div class="wrap">
+      <div class="contact-box">
+        <div class="contact-copy"><h2>جاهز تعرف خياراتك؟</h2><p>بدون فورم وبدون انتظار. تواصل مباشرة مع فريق تمويلك عبر واتساب أو اتصال.</p><ul><li>استفسار مباشر عن السداد وإعادة التمويل</li><li>تمويل إضافي أو إضافي مرن حسب الأهلية</li><li>دراسة وضع الالتزامات الحالية مبدئيًا</li><li>استفسارات تمويل السيارات والعروض المتاحة</li></ul></div>
+        <div class="contact-panel">
+          <h3>تواصل معنا مباشرة</h3><p>اختر الطريقة الأنسب لك، وسيتم الرد على استفسارك وتوضيح الخطوة المناسبة لحالتك.</p>
+          <div class="contact-actions">
+            <a class="contact-card whatsapp" href="https://wa.me/966560598706?text=%D9%87%D9%84%D8%A7%D8%8C%20%D8%AC%D8%A7%D9%8A%20%D9%85%D9%86%20%D9%85%D9%88%D9%82%D8%B9%20%D8%AA%D9%85%D9%88%D9%8A%D9%84%D9%83%20%D9%88%D8%A3%D8%A8%D8%BA%D9%89%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%A7%D9%84%D8%AE%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D9%86%D8%A7%D8%B3%D8%A8%D8%A9%20%D9%84%D8%AD%D8%A7%D9%84%D8%AA%D9%8A." target="_blank" rel="noopener"><span class="contact-icon">◉</span><b>تواصل عبر واتساب</b><span>0560598706</span></a>
+            <a class="contact-card call" href="tel:+966560598706"><span class="contact-icon">☎</span><b>اتصل الآن</b><span>0560598706</span></a>
+          </div>
+          <div class="contact-note">لا ترسل رمز التحقق OTP أو بيانات البطاقة البنكية عبر المحادثات. الموافقة النهائية على أي تمويل تخضع للجهة التمويلية وشروطها.</div>
+        </div>
+      </div>
+    </div></section>
+
+    <section id="faq"><div class="wrap">
+      <div class="section-head"><div class="kicker">الأسئلة الشائعة</div><h2>قبل ما تتواصل</h2></div>
+      <div class="faq">
+        <details><summary>هل تمويلك تابع للبنك الأهلي السعودي؟</summary><p>تمويلك منصة مستقلة لتجميع الطلبات ومساعدة العملاء على فهم خياراتهم. لا ينبغي اعتبار الموقع موقعًا رسميًا للبنك الأهلي السعودي ما لم توجد علاقة تعاقدية واعتماد موثّق يتم الإفصاح عنه صراحة.</p></details>
+        <details><summary>هل القبول مضمون؟</summary><p>لا. القبول والمبلغ والمدة والنسبة تعتمد على الدخل والالتزامات والسجل الائتماني وسياسة الجهة التمويلية وقت التقديم.</p></details>
+        <details><summary>عندي عقاري وسيارة، هل أقدر آخذ تمويل؟</summary><p>يمكن دراسة الحالة، لكن لا توجد إجابة واحدة لجميع العملاء. نسبة الالتزامات والدخل والمتبقي من التمويلات عوامل أساسية في الأهلية.</p></details>
+        <details><summary>هل أقدر آخذ سيارة بدون دفعة أولى؟</summary><p>قد تتوفر عروض أو حالات مؤهلة بدون دفعة أولى. يتم تأكيد ذلك فقط بعد تحديد السيارة والعرض ودراسة الأهلية.</p></details>
+        <details><summary>هل أرسل رقم الهوية أو رمز التحقق؟</summary><p>لا ترسل رمز OTP لأي شخص. هذه الصفحة لا تطلب رقم الهوية أو بيانات الحساب أو البطاقة. أي متطلبات رسمية لاحقة يجب تنفيذها عبر القنوات الموثوقة للجهة التمويلية.</p></details>
+      </div>
+      <div class="disclosure"><strong>تنبيه مهم قبل إطلاق إعلانات Google:</strong> إذا كانت الحملة ستروّج لتمويل شخصي، يجب إضافة البيانات الفعلية المعتمدة للمنتج بشكل بارز في الصفحة قبل الإطلاق، ومنها الحد الأدنى والأقصى لفترة السداد، الحد الأقصى لمعدل النسبة السنوي APR، ومثال تمثيلي للتكلفة الإجمالية والرسوم، إضافةً إلى عنوان الجهة المقدمة للخدمة وأي إفصاحات نظامية لازمة. لم نضع أرقامًا افتراضية حتى لا ننشر معلومات مالية غير صحيحة.</div>
+    </div></section>
+  </main>
+
+  <footer><div class="wrap foot"><div><img src="assets/tamwilak-logo.png" alt="تمويلك"><p>تمويلك أسهل.. وخياراتك أكثر. جميع الطلبات تخضع للأهلية والشروط والمنتجات المتاحة لدى الجهات التمويلية. العلامات التجارية وأسماء البنوك والسيارات المذكورة مملوكة لأصحابها، وذكرها لا يعني وجود تبعية أو اعتماد ما لم يتم الإفصاح عن ذلك بمستند رسمي.</p></div><div class="foot-right"><b>تمويلك | TAMWILAK</b><br><a href="tel:+966560598706">0560598706</a><br><a href="https://wa.me/966560598706?text=%D9%87%D9%84%D8%A7%D8%8C%20%D8%AC%D8%A7%D9%8A%20%D9%85%D9%86%20%D9%85%D9%88%D9%82%D8%B9%20%D8%AA%D9%85%D9%88%D9%8A%D9%84%D9%83%20%D9%88%D8%A3%D8%A8%D8%BA%D9%89%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%A7%D9%84%D8%AE%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D9%86%D8%A7%D8%B3%D8%A8%D8%A9%20%D9%84%D8%AD%D8%A7%D9%84%D8%AA%D9%8A." target="_blank" rel="noopener">واتساب مباشر</a></div></div></footer>
+  <div class="sticky"><div class="sticky-actions"><a class="wa" href="https://wa.me/966560598706?text=%D9%87%D9%84%D8%A7%D8%8C%20%D8%AC%D8%A7%D9%8A%20%D9%85%D9%86%20%D9%85%D9%88%D9%82%D8%B9%20%D8%AA%D9%85%D9%88%D9%8A%D9%84%D9%83%20%D9%88%D8%A3%D8%A8%D8%BA%D9%89%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%A7%D9%84%D8%AE%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D9%86%D8%A7%D8%B3%D8%A8%D8%A9%20%D9%84%D8%AD%D8%A7%D9%84%D8%AA%D9%8A." target="_blank" rel="noopener">واتساب</a><a class="call" href="tel:+966560598706">اتصال</a></div></div>
+
+  <script>
+    const WHATSAPP_NUMBER = "966560598706";
+    const BASE_MESSAGE = "هلا، جاي من موقع تمويلك وأبغى أعرف الخيارات المناسبة لحالتي.";
+    document.querySelectorAll('[data-scroll]').forEach(el=>el.addEventListener('click',()=>{
+      const target=document.querySelector(el.dataset.scroll); if(target) target.scrollIntoView({behavior:'smooth'});
+    }));
+    document.querySelectorAll('[data-situation]').forEach(card=>card.addEventListener('click',()=>{
+      const msg=`هلا، جاي من موقع تمويلك. وضعي الحالي: ${card.dataset.situation}، وأبغى أعرف الخيارات المتاحة.`;
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`,'_blank','noopener');
+    }));
+  </script>
+</body>
+</html>
